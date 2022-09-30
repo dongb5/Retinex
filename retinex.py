@@ -13,7 +13,7 @@ def multiScaleRetinex(img, sigma_list):
     for sigma in sigma_list:
         retinex += singleScaleRetinex(img, sigma)
 
-    retinex = retinex / len(sigma_list)
+    retinex = retinex / len(sigma_list) * 2
 
     return retinex
 
